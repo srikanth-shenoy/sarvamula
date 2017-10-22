@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="tagging">
+  <head>
+	<title>Sarvamula Tagging</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />	  
+	<!--  <link rel="stylesheet" href="./bower_components/bootstrap-css-only/css/bootstrap.min.css" /> -->
+	<link rel="stylesheet" href="./bootswatch/cerulean-3.3.7.min.css" />
+	<link rel="stylesheet" href="./bower_components/angular-motion/dist/angular-motion.min.css" /> 
+	<link rel="stylesheet" href="./bower_components/bootstrap-additions/dist/bootstrap-additions.min.css" /> 
+	<link rel="stylesheet" href="./bower_components/angular-bootstrap/ui-bootstrap-csp.css" /> 
+
+    <script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-resource/angular-resource.min.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-animate/angular-animate.min.js"></script>
+
+    <script type="text/javascript" src="./bower_components/lodash/dist/lodash.min.js"></script>
+
+    <script type="text/javascript" src="./bower_components/angular-strap/dist/angular-strap.min.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
+
+    <script type="text/javascript" src="./bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+    <script type="text/javascript" src="./app/app.js"></script>
+    <script type="text/javascript" src="./app/works/services.js"></script>
+    <script type="text/javascript" src="./app/works/controllers.js"></script>
+    <!--
+    <script type="text/javascript" src="./app/controllers.js"></script>
+    <script type="text/javascript" src="./app/services.js"></script>
+  	-->
+  	<style>
+.top {
+  top: 60px;
+  left:50%;
+  position: fixed;
+  transform:translateX(-50%);
+}
+
+  	</style>
+  </head>
+  <body ng-cloak class="ng-cloak" >
+  
+	<nav class="navbar navbar-default" role="navigation" bs-navbar>
+	
+	  <!-- 
+	  <div class="navbar-header">
+	    <a class="navbar-brand" href="#">Sarvamula Tagging</a>
+	  </div>
+	  <ul class="nav navbar-nav">
+	    <li data-match-route="/$"><a href="#/">Home</a></li>
+	    <li data-match-route="/browse"><a href="#!/browse">Browse</a></li>
+	    <li data-match-route="/search"><a href="#!/search">Search</a></li>
+	  </ul>
+	  -->
+	  
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+		  </button>
+          <a class="navbar-brand" href="http://dvaita.org" target="_blank">Sarvamula Tagging &nbsp;&nbsp;</a>
+	                
+        </div>
+        
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+	    	  <li data-match-route="/$"><a href="#!/">Home</a></li>
+	    	  <li data-match-route="/browse"><a href="#!/sarvamula">Sarvamula</a></li>
+	    	  <li data-match-route="/browse"><a href="#!/tags">Tags</a></li>
+	    	  <li data-match-route="/search"><a href="#!/search">Search</a></li>
+	        </ul>
+	        <ul class="nav navbar-nav navbar-right">
+	    	  <li data-match-route="/help"><a href="#!/help">Help</a></li>
+            </ul>
+		</div>
+	  </div>
+	</nav>  
+  
+         <div style="" id="expiry" class="text-warning"></div>
+
+       <!-- Status msgs from AJAX calls -->
+       <div style="display:none;" id="estat" class="alert alert-error"></div>
+       <div style="display:none;" id="sstat" class="alert alert-success"></div>
+  
+		<div id="alerts-container"></div>
+
+    <div class="container" >
+
+      <div ng-view></div>
+        
+      <p style="margin-top:25px;"></p>
+    
+      <footer>
+        <p>&copy; 2017 <a href="https://dvaita.org" target="_blank">Sarvamula Tagging Project</a><span style="float:right">Tagging 1.0.0-SNAPSHOT</span></p>
+      </footer>
+      
+    </div>
+    
+    
+  </body>
+</html>

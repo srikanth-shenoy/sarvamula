@@ -1,0 +1,6 @@
+//DROP CONSTRAINT ON (work:Work) ASSERT work.uid IS UNIQUE
+//DROP CONSTRAINT ON (person:Person) ASSERT person.uid IS UNIQUE
+
+MATCH (n)
+OPTIONAL MATCH (n)-[r]-()
+DELETE n,r

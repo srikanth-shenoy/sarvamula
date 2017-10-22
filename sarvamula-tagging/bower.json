@@ -1,0 +1,15 @@
+{
+	"name": "ng-spring-boot",
+	"dependencies": {
+		"angular": "~1.6.0",
+		"angular-resource": "~1.6.0",
+		"angular-animate": "~1.6.0",
+		"angular-route": "~1.6.0",
+		"bootstrap-css-only": "~3.3.0",
+		"lodash": "~4.17.0",
+		"angular-strap": "~2.3.0",
+		"angular-motion": "~0.4.4",
+		"bootstrap-additions": "~0.3.1",
+		"angular-bootstrap": "~2.5.0"
+	}
+}

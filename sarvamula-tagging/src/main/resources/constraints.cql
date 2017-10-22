@@ -1,0 +1,2 @@
+CREATE CONSTRAINT ON (person:Person) ASSERT person.uid IS UNIQUE
+CREATE CONSTRAINT ON (work:Work) ASSERT work.uid IS UNIQUE
